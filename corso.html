@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Corso | Fit Circuit Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stile specifico per la tabella orari */
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(255,255,255,0.05);
+        }
+        .timetable th, .timetable td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        .timetable th {
+            color: var(--primary-red);
+            font-size: 1.1rem;
+            width: 30%;
+        }
+        
+        /* Stile per la lista benefici */
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .benefit-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .benefit-list li::before {
+            content: '✓';
+            color: var(--primary-red);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GONG YAO <span>ASD</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="corso.html" class="active">Il Corso</a></li>
+            <li><a href="chi-siamo.html">Chi Siamo</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" style="height: 40vh; background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1350&q=80');">
+        <div class="hero-content">
+            <h1>Fit Circuit Lab</h1>
+            <p>L'evoluzione del Training Funzionale.</p>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2>Cos'è il Fit Circuit Lab?</h2>
+        
+        <div style="margin-bottom: 40px;">
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                <strong>In ogni lezione ti aspetta un allenamento nuovo e stimolante!</strong><br>
+                Dimentica la monotonia della solita scheda in sala pesi. Al Fit Circuit Lab cambiano gli attrezzi, gli esercizi e la struttura del circuito (a tempo, a ripetizione, misto o HIIT). Questo approccio spinge il tuo corpo ad adattarsi e migliorare continuamente.
+            </p>
+            
+            <div style="background: rgba(255,255,255,0.05); padding: 20px; border-left: 4px solid var(--primary-red); border-radius: 4px;">
+                <h3 style="margin-top: 0; color: #fff;">Adatto a ogni livello</h3>
+                <p style="margin-bottom: 0;">
+                    Non importa se sei un atleta o se inizi oggi: <strong>il circuito si adatta a te</strong>.
+                    L'istruttore è sempre presente per guidarti, correggere l'esecuzione e modulare l'intensità degli esercizi in base alle tue reali capacità.
+                    Nessuna competizione, solo il tuo miglioramento costante.
+                </p>
+            </div>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+            <div>
+                <h3 style="color: var(--primary-red); border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 20px;">I Benefici Reali</h3>
+                <ul class="benefit-list">
+                    <li><strong>Risultati visibili:</strong> Aumento di forza, tonicità e controllo del corpo già dopo poche settimane.</li>
+                    <li><strong>Metabolismo attivo:</strong> Incremento del consumo calorico anche a riposo.</li>
+                    <li><strong>Definizione:</strong> Riduzione della massa grassa grazie al mix funzionale e cardiovascolare.</li>
+                    <li><strong>Salute ossea:</strong> Aumento della densità ossea e prevenzione infortuni.</li>
+                    <li><strong>Postura corretta:</strong> Migliora coordinazione e consapevolezza corporea.</li>
+                    <li><strong>Cuore forte:</strong> Rinforza il sistema cardiovascolare migliorando l'energia quotidiana.</li>
+                    <li><strong>Mente attiva:</strong> Stimola equilibrio, riflessi e concentrazione.</li>
+                    <li><strong>Anti-stress:</strong> Scarica le tensioni e favorisce la qualità del sonno.</li>
+                    <li><strong>Mobilità:</strong> Rende i movimenti più fluidi e naturali.</li>
+                    <li><strong>Socialità:</strong> Un clima positivo e supportivo che ti motiva a non mollare.</li>
+                </ul>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=600&q=80" style="width: 100%; border-radius: 10px; display: block;" alt="Allenamento Funzionale Pesi">
+                
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" style="width: 100%; border-radius: 10px; display: block;" alt="Allenamento Funzionale Dinamico">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Orari Settimanali</h2>
+        <p>I nostri turni sono pensati per darti flessibilità massima, mattina e sera.</p>
+        
+        <table class="timetable">
+            <tr>
+                <th>LUNEDÌ</th>
+                <td>18:30 &bull; 19:30</td>
+            </tr>
+            <tr>
+                <th>MARTEDÌ</th>
+                <td>09:30 &bull; 18:30 &bull; 19:30</td>
+            </tr>
+            <tr>
+                <th>MERCOLEDÌ</th>
+                <td>18:00 &bull; 19:00</td>
+            </tr>
+            <tr>
+                <th>GIOVEDÌ</th>
+                <td>09:30 &bull; 18:30 &bull; 19:30</td>
+            </tr>
+            <tr>
+                <th>VENERDÌ</th>
+                <td>18:30 &bull; 19:30</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="container" style="background: var(--secondary-dark); border-radius: 15px;">
+        <h2>Metodologia Certificata</h2>
+        <p>
+            Ogni lezione è strutturata secondo i principi appresi direttamente dalla <strong>Functional Training School (FTS)</strong>
+        </p>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?auto=format&fit=crop&w=500&q=60" alt="Kettlebell">
+            <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=500&q=60" alt="TRX">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=500&q=60" alt="Dumbbells">
+        </div>
+    </section>
+
+    <div style="text-align: center; padding: 40px;">
+        <a href="index.html#prenota-ora" class="btn">PRENOTA UNA PROVA</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Fit Circuit Lab - Gong Yao ASD</p>
+    </footer>
+</body>
+</html>
